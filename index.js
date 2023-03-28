@@ -13,10 +13,10 @@ let options = {
       pass: '9f799f9942188d380becd74014b45e04'
     },
     body: `{
-      "jsonrpc": "2.0",
-      "id": 0,
-      "method": "Filecoin.ChainHead"
-    }`
+        "jsonrpc": "2.0",
+        "id": 0,
+        "method": "Filecoin.ChainGetBlock",
+        "params": [{"/":"bafy2bzacedyqu6bgjpgmmnzxmirbcyculwprut45agcl5msetp34q5uznz7wa"}]}`
 }
 
 request(options, (error, response, body) => {
